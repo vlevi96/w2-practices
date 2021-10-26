@@ -1,27 +1,11 @@
-function toggleMenu(event) {
-    //console.log(event.target.classList);
-    //console.log(event.target);
-
-    
-    //event.target.classList.toggle("clicked");
-    const randomText="Ezt vajon kiloggolja-e?";
-
-    const fastLogResult=fastLog("Ezt a szöveget szeretném kiloggoltatni!");
-    fastLog(randomText);
-    console.log(fastLogResult);
-    document.getElementById("about").classList.add("clicked-too");
+function toggleClicked(event) {
+    event.target.classList.toggle("clicked");
+    document.getElementById("nav").classList.toggle("clicked");
 }
 
 function loadEvent() {
-    //console.log('the page has loaded');
+    console.log('the page has loaded');
 
-    document.getElementById("menu-btn").addEventListener("click", toggleMenu);
-    //console.log(document.getElementById("menu-btn"));
+    document.getElementById("menu-btn").addEventListener("click", toggleClicked); 
 }
-
-function fastLog(text){
-    console.log(text);
-    return "muhahaha";
-}
-
 window.addEventListener("load", loadEvent);
