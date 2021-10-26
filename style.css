@@ -57,7 +57,7 @@
       background-color: black;
       
   }
-  #menu-btn.clicked{
+  #bodyID.clicked #menu-btn{
     background-color: red;
   }
 
@@ -72,6 +72,6 @@
     background-color: blue;
   }
 
-  #nav.clicked{
+  #bodyID.clicked nav{
     right:0;
   }
